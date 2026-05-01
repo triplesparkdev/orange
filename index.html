@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrangeEggs - Read. Write. Share. Find. Trust.</title>
+  <meta name="description" content="OrangeEggs - Your trusted review platform. Read, write, and share reviews.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Caveat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#" class="logo" aria-label="OrangeEggs Home">
+        <!-- <svg class="logo-egg" viewBox="0 0 40 52" width="36" height="46">
+          <defs>
+            <clipPath id="egg-clip">
+              <ellipse cx="20" cy="28" rx="18" ry="23"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#egg-clip)">
+            <rect y="0" width="40" height="11" fill="#7A2E00"/>
+            <rect y="11" width="40" height="10" fill="#B94600"/>
+            <rect y="21" width="40" height="10" fill="#E06000"/>
+            <rect y="31" width="40" height="10" fill="#FF8C00"/>
+            <rect y="41" width="40" height="11" fill="#FFAD33"/>
+          </g>
+        </svg> -->
+        <img src="./public/logo_single.png" alt="logo" class="logo-img">
+        <span class="logo-text">ORANGE<span class="logo-highlight">EGGS</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="nav-link">Categories</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Sign in</a>
+        <a href="#" class="nav-btn-outline" id="forBusinessNav">FOR BUSINESS</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+
+    <!-- absolute images -->
+    <img class="h_image_01" src="./public/home_1.png" alt="">
+    <img class="h_image_02" src="./public/home_2.png" alt="">
+    <img class="h_image_03" src="./public/home_3.png" alt="">
+    <img class="h_image_04" src="./public/home_4.png" alt="">
+    <img class="h_image_05" src="./public/home_5.png" alt="">
+    <img class="home_chart" src="./public/home_chart.png" alt="">
+
+
+
+
+
+    <!-- Hero Content Overlay -->
+    <div class="hero-overlay">
+      <h1 class="hero-title">Read. Write. Share.<br>Find. Trust.</h1>
+      <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="Company, Individual or Category" id="searchInput">
+        <button class="search-btn" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overflow images that sit on top of the story section -->
+  <div class="hero-overflow-images">
+    <img class="logo5" src="./public/logo_5.png" alt="logo5">
+    <img class="h_image_06" src="./public/home_6.png" alt="">
+    <img class="h_image_07" src="./public/home_7.png" alt="">
+  </div>
+
+  <!-- ========== STORY SECTION ========== -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <h2 class="story-heading anim-fade-up">
+        Each review has a personal <span class="script-text">story</span>
+      </h2>
+      <div class="story-cards">
+        <div class="story-card-orange anim-fade-up">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry.</p>
+          <a href="#" class="btn-outline-dark" id="forIndividualBtn">FOR INDIVIDUAL</a>
+        </div>
+        <div class="story-card-image anim-fade-up">
+          <img src="./public/story_user.png" alt="story user">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFITS + TRENDS WRAPPER ========== -->
+  <div class="benefits-trends-wrapper">
+
+    <!-- Floating visuals spanning both sections -->
+    <div class="bt-floating-visuals">
+      <img src="./public/big_logo.png" alt="OrangeEggs Logo" class="big-logo-img">
+      <img src="./public/lady_piano.png" alt="Lady playing piano" class="bt-lady-piano">
+      <img src="./public/logo5_text.png" alt="5 star rating" class="float-logo5-text">
+      <img src="./public/user_progress.png" alt="User progress" class="float-user-progress">
+    </div>
+
+    <!-- BENEFITS SECTION (Hero BG) -->
+    <section class="benefits-section" id="benefits">
+      <div class="container benefits-grid">
+        <div class="benefits-text anim-fade-up">
+          <h2>Why use review<br>for brand?<br>Its <span class="italic-highlight">powerful</span> benefit.</h2>
+          <a href="#" class="btn-orange" id="forBusinessBtn">FOR BUSINESS</a>
+        </div>
+        <div class="benefits-visual anim-fade-up"></div>
+      </div>
+    </section>
+
+    <!-- TRENDS SECTION (Black BG) -->
+    <section class="trends-section" id="trends">
+      <div class="container trends-grid">
+        <div class="trends-text anim-fade-up">
+          <h2>Latest trends &amp;<br><span class="trends-script">insights</span></h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry.</p>
+          <a href="#" class="btn-outline-light" id="getStartedBtn">GET STARTED</a>
+        </div>
+        <div class="trends-visual anim-fade-up"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========== HASHTAGS SECTION ========== -->
+  <section class="hashtags-section" id="hashtags">
+    <div class="container">
+      <div class="hashtags-header anim-fade-up">
+        <span class="hashtags-small">Create</span>
+        <h2 class="hashtags-title">#hashtags</h2>
+      </div>
+
+      <!-- Feature Card 1: Full Width -->
+      <div class="feature-card feature-card-big anim-fade-up" id="featureEvents">
+        <div class="feature-card-content">
+          <h3 style="margin-bottom: 16px;">Interactive with events</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry.</p>
+        </div>
+        <img src="./public/card_1.png" alt="Interactive Events">
+      </div>
+
+      <!-- Feature Cards Row 1: Wide | Narrow -->
+      <div class="feature-cards-row row-wide-narrow">
+        <div class="feature-card anim-fade-up" id="featurePolls">
+          <img src="./public/card_2.png" alt="Interactive Polls">
+        </div>
+        <div class="feature-card anim-fade-up" id="featureDummy">
+          <img src="./public/card_3.png" alt="Loremipsum dummy">
+        </div>
+      </div>
+
+      <!-- Feature Cards Row 2: Equal Widths -->
+      <div class="feature-cards-row row-equal">
+        <div class="feature-card anim-fade-up" id="featureQA">
+          <img src="./public/card_4.png" alt="Q&amp;A">
+        </div>
+        <div class="feature-card anim-fade-up" id="featureChat">
+          <img src="./public/card_5.png" alt="Chat">
+        </div>
+      </div>
+
+      <a href="#" class="see-all-link anim-fade-up" id="seeAllFeatures">See all features →</a>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS SECTION ========== -->
+  <section class="howitworks-section" id="howItWorks">
+    <div class="container">
+      <div class="hiw-header">
+        <h2 class="hiw-title anim-fade-up">How it<br>works</h2>
+        <p class="hiw-desc anim-fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+          galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+
+      <div class="hiw-step anim-fade-up" id="step1">
+        <div class="hiw-step-text">
+          <span class="step-label">Step 1</span>
+          <h3>Create <span class="arrow-icon">↗</span></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="hiw-step-visual">
+          <img src="./public/how_1.png" alt="Create" class="hiw-step-img">
+        </div>
+      </div>
+
+      <div class="hiw-step hiw-step-reverse anim-fade-up" id="step2">
+        <div class="hiw-step-text">
+          <span class="step-label">Step 2</span>
+          <h3>Manage <span class="arrow-icon">↗</span></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's</p>
+        </div>
+        <div class="hiw-step-visual">
+          <img src="./public/how_2.png" alt="Manage" class="hiw-step-img">
+        </div>
+      </div>
+
+      <div class="hiw-step anim-fade-up" id="step3">
+        <div class="hiw-step-text">
+          <span class="step-label">Step 3</span>
+          <h3>Analyze <span class="arrow-icon">↗</span></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the info
+          </p>
+        </div>
+        <div class="hiw-step-visual">
+          <img src="./public/how_3.png" alt="Analyze" class="hiw-step-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RECENT REVIEWS SECTION ========== -->
+  <section class="reviews-section" id="recentReviews">
+    <div class="reviews-bg">
+      <div class="container">
+        <div class="reviews-header">
+          <h2 class="reviews-title anim-fade-up">Recent<br>Reviews</h2>
+          <div class="reviews-nav">
+            <button class="rev-arrow rev-prev" id="revPrev" aria-label="Previous">←</button>
+            <button class="rev-arrow rev-next" id="revNext" aria-label="Next">→</button>
+          </div>
+        </div>
+        <div class="reviews-carousel" id="reviewsCarousel">
+          <div class="review-card anim-fade-up">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            <div class="review-author">
+              <img src="https://picsum.photos/seed/rev1/60/60" alt="user">
+              <div>
+                <strong>Name here lorem Ipsum</strong>
+                <small>Director of lorem-ipsum dummy content ehire</small>
+              </div>
+            </div>
+          </div>
+          <div class="review-card anim-fade-up">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type</p>
+            <div class="review-author">
+              <img src="https://picsum.photos/seed/rev2/60/60" alt="user">
+              <div>
+                <strong>Name here lorem Ipsum</strong>
+                <small>Director of lorem-ipsum dummy content ehire</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container footer-top-grid">
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <a href="#">About us</a>
+            <a href="#">Categories</a>
+            <div class="footer-select-wrap">
+              <label>Choose Language</label>
+              <select id="langSelect">
+                <option>English</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer-col">
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Notice</a>
+            <div class="footer-select-wrap">
+              <label>Choose Country</label>
+              <select id="countrySelect">
+                <option>USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer-col">
+            <a href="#">About us</a>
+            <a href="#">Terms &amp; condition</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-download">
+            <span style="margin-bottom: 20px;">Download app</span>
+            <div class="store-badges">
+              <img src="./public/app_play.png" alt="Download App" class="app-play-img">
+            </div>
+          </div>
+          <div class="footer-social">
+            <span>Follow us on</span>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="white" stroke-width="2" />
+                  <circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2" />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="white" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="none" stroke="white"
+                    stroke-width="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" fill="none" stroke="white"
+                    stroke-width="2" />
+                  <rect x="2" y="9" width="4" height="12" fill="none" stroke="white" stroke-width="2" />
+                  <circle cx="4" cy="4" r="2" fill="none" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-logo-section">
+      <div class="container footer-logo-inner">
+        <img src="./public/logo_single.png" alt="logo" class="footer-logo-img">
+        <span class="footer-logo-text">ORANG<span>EGGS</span></span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2024 Orangeggs. All right reserved.</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
